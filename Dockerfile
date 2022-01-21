@@ -2,7 +2,7 @@ FROM co1e/debian-aliyun:slim
 ENV CARGO_HOME=/root/.cargo \
     PATH=/root/.cargo/bin:$PATH
 
-RUN apt-get install curl gcc ca-certificates libc6-dev -y && \
+RUN apt-get install curl gcc ca-certificates libc6-dev git -y && \
     mkdir ~/.cargo && \
     touch ~/.cargo/config && \
     echo '[source.crates-io]\n\
